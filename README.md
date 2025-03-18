@@ -1,60 +1,36 @@
-# ATHLETIS PURE MUSCULATION
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-Site web pour la salle de sport ATHLETIS PURE MUSCULATION, développé avec Next.js et Tailwind CSS.
+## Getting Started
 
-## Technologies utilisées
-
-- [Next.js](https://nextjs.org/) - Framework React pour le développement web
-- [React](https://reactjs.org/) - Bibliothèque JavaScript pour construire des interfaces utilisateurs
-- [Tailwind CSS](https://tailwindcss.com/) - Framework CSS utilitaire
-- [Framer Motion](https://www.framer.com/motion/) - Bibliothèque d'animations pour React
-- [TypeScript](https://www.typescriptlang.org/) - Langage de programmation typé basé sur JavaScript
-
-## Installation
-
-Clonez le repository :
-
-```bash
-git clone https://github.com/webdesigner68/athletis.git
-cd athletis
-```
-
-Installez les dépendances :
-
-```bash
-npm install
-```
-
-## Développement
-
-Pour lancer le serveur de développement :
+First, run the development server:
 
 ```bash
 npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-Accédez à [http://localhost:3000](http://localhost:3000) dans votre navigateur pour voir le résultat.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Déploiement
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-Pour construire l'application pour la production :
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-```bash
-npm run build
-```
+## Learn More
 
-Pour démarrer le serveur de production :
+To learn more about Next.js, take a look at the following resources:
 
-```bash
-npm start
-```
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-## Structure du projet
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-- `src/` - Code source principal de l'application
-- `public/` - Fichiers statiques (images, fonts, etc.)
-- `styles/` - Feuilles de style globales
+## Deploy on Vercel
 
-## Licence
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Tous droits réservés © ATHLETIS PURE MUSCULATION 
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
