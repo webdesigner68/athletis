@@ -4,7 +4,6 @@ const nextConfig = {
   images: {
     domains: [],
   },
-  serverExternalPackages: [],
   webpack: (config) => {
     return config;
   },
