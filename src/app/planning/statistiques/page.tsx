@@ -551,7 +551,7 @@ export default function StatisticsPage() {
                       {/* Arc pour chaque catégorie */}
                       <circle cx="50" cy="50" r="40" fill="transparent" stroke="#1f2937" strokeWidth="20" />
                       
-                      {categoryDistribution.reduce((acc, category, i) => {
+                      {categoryDistribution.reduce<{ angle: number; paths: JSX.Element[] }>((acc, category, i) => {
                         const total = categoryDistribution.reduce((sum, cat) => sum + cat.value, 0);
                         const startAngle = acc.angle;
                         const angle = (category.value / total) * 360;
