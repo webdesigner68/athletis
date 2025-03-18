@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 255, 255, 255;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+}
+
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading uppercase tracking-wide;
+  }
+  
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl;
+  }
+  
+  h2 {
+    @apply text-3xl md:text-4xl lg:text-5xl;
+  }
+  
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
+  
+  .font-title {
+    @apply font-heading uppercase tracking-wider;
+  }
+  
+  .athletis-title {
+    @apply uppercase tracking-wider text-athletis-green-500;
+  }
+  
+  /* Classes spécifiques pour différents types de titres */
+  .section-title {
+    @apply font-heading uppercase text-3xl md:text-4xl mb-6 tracking-wide;
+  }
+  
+  .hero-title {
+    @apply uppercase text-4xl md:text-5xl lg:text-6xl tracking-wider font-bold;
+  }
+  
+  .feature-title {
+    @apply font-heading uppercase text-xl tracking-wide;
+  }
+  
+  /* Style pour la navigation */
+  .nav-link {
+    @apply uppercase font-heading tracking-wider text-sm;
+  }
+  
+  /* Classes d'animation */
+  .hover-underline {
+    @apply relative;
+  }
+  
+  .hover-underline::after {
+    @apply content-[''] absolute left-0 bottom-0 w-0 h-0.5 bg-athletis-green-500 transition-all duration-300;
+  }
+  
+  .hover-underline:hover::after {
+    @apply w-full;
+  }
+}
+
+/* Styles spécifiques pour l'apparence fitness/musculation */
+@layer components {
+  /* Style pour les boutons principaux */
+  .btn-athletis {
+    @apply px-6 py-3 bg-athletis-green-600 hover:bg-athletis-green-700 text-white rounded-md 
+    transition-colors uppercase font-heading tracking-wider font-bold shadow-athletis 
+    transform hover:-translate-y-1 hover:shadow-athletis-lg;
+  }
+  
+  /* Style pour les cartes */
+  .card-athletis {
+    @apply bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-athletis-green-500 
+    transition-all shadow-athletis hover:shadow-athletis-lg transform hover:-translate-y-1;
+  }
+  
+  /* Style pour les titres de sections */
+  .athletis-section-title {
+    @apply uppercase text-3xl md:text-4xl mb-2 tracking-wider font-heading;
+  }
+  
+  /* Style pour les sous-titres */
+  .athletis-subtitle {
+    @apply uppercase text-xl tracking-wider text-athletis-green-500 mb-4 font-heading;
+  }
+  
+  /* Style pour les paragraphes descriptifs */
+  .athletis-description {
+    @apply text-gray-400 mb-6;
+  }
+  
+  /* Style pour les badges */
+  .athletis-badge {
+    @apply uppercase text-xs font-bold bg-athletis-green-600 text-white px-3 py-1 rounded-full tracking-wider;
+  }
+  
+  /* Style pour les pages de détail */
+  .page-title-container {
+    @apply pt-32 pb-20 bg-gray-900 relative overflow-hidden;
+  }
+  
+  .page-title {
+    @apply uppercase text-4xl md:text-5xl font-bold mb-6 tracking-wider font-heading;
+  }
+  
+  /* Style pour les blocs de mise en avant */
+  .highlight-block {
+    @apply border-l-4 border-athletis-green-500 pl-4 py-2 my-6 italic;
+  }
+  
+  /* Style pour les listes à puces */
+  .athletis-list-item {
+    @apply flex items-start mb-3;
+  }
+  
+  .athletis-check-icon {
+    @apply h-5 w-5 text-athletis-green-500 mt-0.5 mr-3 flex-shrink-0;
+  }
+} 
